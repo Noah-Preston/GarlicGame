@@ -64,6 +64,7 @@ function update() {
   chefPriceElem.innerText = autoUpgrades.italianChef.price;
   showBpsElem.innerText = garlicBread.bps;
   showClickElem.innerText = garlicBread.multiplier + 1;
+  //  enableHand()
 }
 
 function buyHand() {
@@ -143,6 +144,7 @@ function grabBread() {
   garlicBread.slices++;
   garlicBread.slices = garlicBread.slices + garlicBread.multiplier
   sliceCountElem.innerText = garlicBread.slices;
+  update()
 }
 
 function figureBps() {
@@ -171,13 +173,14 @@ function restart() {
   update();
 }
 
-function enableHand() {
+/*function enableHand() {
   if (garlicBread.slices < clickUpgrades.anotherHand.price) {
     return "not enough slices"
   } else if (garlicBread.slices >= clickUpgrades.anotherHand.price) {
-
+    const handButton = document.querySelector("hand-button > button");
+    handButton.classList.remove("disabled")
   }
-}
+}*/
 
 
 
