@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Get This (Garlic) Bread!</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<main class="container-fluid text-center bg justify-content-center">
+  <div class="row">
+    <div class="col-4 pl-5 py-5">
+      <div class="row">
+        <div class="col-12 pb-5">
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Slices: <span id="slice-counter"></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Extra Hands: <span id="hand-counter"></span></li>
+              <li class="list-group-item">Loaf Scoops: <span id="scoop-counter"></span></li>
+              <li class="list-group-item">Bread Vaccuums: <span id="vac-count"></span></li>
+              <li class="list-group-item">Ez-bake Ovens: <span id="ezbake-count"></span></li>
+              <li class="list-group-item">Italian Chefs: <span id="chef-count"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <img src="./garlicbread.jpg" alt="" width="400" class="p-5" onclick="grabBread()">
+      <br>
+      <span>Current Bread Per Click: <span id="show-click"></span></span>
+      <br>
+      <span>Current Bread Per Second (Bps): <span id="show-bps"></span></span>
+    </div>
+    <div class="col-4">
+      Store!
+      <br>
+      <span id="hand-price"></span><button class="btn btn-dark" onclick="buyHand()">buy hand</button></span>
+      <br>
+      <span id="scoop-price"></span><button class="btn btn-dark" onclick="buyScoop()">buy loaf scoop</button></span>
+      <br>
+      <span id="vac-price"></span><button class="btn btn-dark" onclick="buyVac()">buy bread vaccuum</button></span>
+      <br>
+      <span id="ezbake-price"></span><button class="btn btn-dark" onclick="buyBake()">buy ez-bake oven</button></span>
+      <br>
+      <span id="chef-price"></span><button class="btn btn-dark" onclick="buyChef()">buy italian chef</button></span>
+    </div>
+
+  </div>
+</main>
+
+<body>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
