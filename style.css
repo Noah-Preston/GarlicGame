@@ -13,3 +13,7 @@
 .text-small {
   font-size: .8rem;
 }
+
+.addpad-top {
+  padding-top: 7rem;
+}

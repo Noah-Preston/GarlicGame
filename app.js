@@ -164,4 +164,4 @@ function addBps() {
 
 
 addBps();
-update()
+update();

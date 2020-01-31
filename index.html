@@ -26,13 +26,13 @@
   </header>
 
   <main class="container-fluid text-center justify-content-center">
-    <div class="row py-5">
+    <div class="row py-5 addpad-top">
       <div class="col-4 pl-5 py-5">
-        <div class="row">
+        <div class="row addpad-top">
           <div class="col-12 pb-5">
             <div class="card" style="width: 18rem;">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Slices: <span id="slice-counter"></span></li>
+                <li class="list-group-item text-big">Slices: <span id="slice-counter"></span></li>
               </ul>
             </div>
           </div>
@@ -49,44 +49,56 @@
           </div>
         </div>
       </div>
-      <div class="col-4 pt-5">
+      <div class="col-4 addpad-top">
         <img src="./garlicbread.jpg" alt="" width="400" class="p-5" onclick="grabBread()">
         <br>
         <span class="text-light">Current Bread Per Click: <span id="show-click"></span></span>
         <br>
         <span class="text-light">Current Bread Per Second (Bps): <span id="show-bps"></span></span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="btn btn-lg btn-danger">DO NOT PRESS</button>
       </div>
       <div class="col-4">
         <span class="text-big">Store!</span>
         <br>
-        <span>Price:<span id="hand-price"></span><br></span><button class="btn btn-dark" onclick="buyHand()">buy
+        <span>Price:<span id="hand-price"></span><br></span><img src="./hand.png" alt="" width="20"><button
+          class="btn btn-dark" onclick="buyHand()">buy
           hand</button><br><span class="text-small"> this upgrade we will attach another arm onto your body to increase
           the
           number of slices you can grab by 1!</span></span>
         <br>
         <br>
-        <span>Price:<span id="scoop-price"></span></span><br><button class="btn btn-dark" onclick="buyScoop()">buy
+        <span>Price:<span id="scoop-price"></span></span><br><img src="./scoop.jpg" alt="" width="20"><button
+          class="btn btn-dark" onclick="buyScoop()">buy
           loaf
           scoop</button><br><span class="text-small"> this upgrade you will recieve a Loaf Scoop (patent pending) which
           allows you to pick up
           15 more slices at once!</span></span>
         <br>
         <br>
-        <span>Price:<span id="vac-price"></span></span><br><button class="btn btn-dark " onclick="buyVac()">buy bread
+        <span>Price:<span id="vac-price"></span></span><br><img src="./vaccuum.jpg" alt="" width="20"><button
+          class="btn btn-dark " onclick="buyVac()">buy bread
           vaccuum</button><br><span class="text-small">Recent scientific discoveries have allowed the creation of a
           bread specific super vaccuum allowing the collection of 60 slices at once!</span></span>
         <br>
-        <span>Price:<span id="ezbake-price"></span></span><br><button class="btn btn-dark " onclick="buyBake()">buy
+        <br>
+        <span>Price:<span id="ezbake-price"></span></span><br><img src="./oven.png" alt="" width="20"><button
+          class="btn btn-dark " onclick="buyBake()">buy
           ez-bake
           oven</button><br>
-        <spanc class="text-small">Hands getting tired of grabbing bread? Bake your own with this EzBake oven which
+        <span class="text-small">Hands getting tired of grabbing bread? Bake your own with this EzBake oven which
           outputs 5 slices of bread every second</span></span>
-          <br>
-          <br>
-          <span>Price:<span id="chef-price"></span></span><br><button class="btn btn-dark " onclick="buyChef()">buy
-            italian
-            chef</button><br><span class="text-small">Hire a full time Italian chef to bake and insane quantity of
-            bread! he will output 35 slices every single second!</span></span>
+        <br>
+        <br>
+        <span>Price:<span id="chef-price"></span></span><br><img src="./chef.jpg" alt="" width="20"><button
+          class="btn btn-dark " onclick="buyChef()">buy
+          italian
+          chef</button><br><span class="text-small">Hire a full time Italian chef to bake and insane quantity of
+          bread! he will output 35 slices every single second!</span></span>
       </div>
 
     </div>
