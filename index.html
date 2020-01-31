@@ -13,56 +13,86 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
 
-<main class="container-fluid text-center bg justify-content-center">
-  <div class="row">
-    <div class="col-4 pl-5 py-5">
-      <div class="row">
-        <div class="col-12 pb-5">
-          <div class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Slices: <span id="slice-counter"></span></li>
-            </ul>
+
+  <script data-who="" src="https://d23jutsnau9x47.cloudfront.net/back/v1.0.6/viewer.js"
+    data-option="{|environment|:{|gradient|:|horizontal|,|sensitivity|:0.8,|colorStart|:[255,217,59,1],|colorEnd|:[123,49,12,1]},|particle|:{|life|:5,|power|:0.01,|texture|:|https://res.cloudinary.com/naker-io/image/upload/v1566560053/circle_05.png|,|number|:293,|colorStart|:[87,123,21,1],|colorEnd|:[27,125,39,1],|sizeStart|:0.16,|sizeEnd|:0.32,|direction1|:{|x|:0,|y|:0,|z|:0},|direction2|:{|x|:0,|y|:0,|z|:0}}}"></script>
+
+  <header class="container-fluid">
+    <div class="row text-center bg-dark text-light text-large">
+      <div class="col-12">GET THIS (GARLIC) BREAD</div>
+    </div>
+  </header>
+
+  <main class="container-fluid text-center justify-content-center">
+    <div class="row">
+      <div class="col-4 pl-5 py-5">
+        <div class="row">
+          <div class="col-12 pb-5">
+            <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Slices: <span id="slice-counter"></span></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-12">
-          <div class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Extra Hands: <span id="hand-counter"></span></li>
-              <li class="list-group-item">Loaf Scoops: <span id="scoop-counter"></span></li>
-              <li class="list-group-item">Bread Vaccuums: <span id="vac-count"></span></li>
-              <li class="list-group-item">Ez-bake Ovens: <span id="ezbake-count"></span></li>
-              <li class="list-group-item">Italian Chefs: <span id="chef-count"></span></li>
-            </ul>
+          <div class="col-12">
+            <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Extra Hands: <span id="hand-counter"></span></li>
+                <li class="list-group-item">Loaf Scoops: <span id="scoop-counter"></span></li>
+                <li class="list-group-item">Bread Vaccuums: <span id="vac-count"></span></li>
+                <li class="list-group-item">Ez-bake Ovens: <span id="ezbake-count"></span></li>
+                <li class="list-group-item">Italian Chefs: <span id="chef-count"></span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-4">
-      <img src="./garlicbread.jpg" alt="" width="400" class="p-5" onclick="grabBread()">
-      <br>
-      <span>Current Bread Per Click: <span id="show-click"></span></span>
-      <br>
-      <span>Current Bread Per Second (Bps): <span id="show-bps"></span></span>
-    </div>
-    <div class="col-4">
-      Store!
-      <br>
-      <span id="hand-price"></span><button class="btn btn-dark" onclick="buyHand()">buy hand</button></span>
-      <br>
-      <span id="scoop-price"></span><button class="btn btn-dark" onclick="buyScoop()">buy loaf scoop</button></span>
-      <br>
-      <span id="vac-price"></span><button class="btn btn-dark" onclick="buyVac()">buy bread vaccuum</button></span>
-      <br>
-      <span id="ezbake-price"></span><button class="btn btn-dark" onclick="buyBake()">buy ez-bake oven</button></span>
-      <br>
-      <span id="chef-price"></span><button class="btn btn-dark" onclick="buyChef()">buy italian chef</button></span>
-    </div>
+      <div class="col-4">
+        <img src="./garlicbread.jpg" alt="" width="400" class="p-5" onclick="grabBread()">
+        <br>
+        <span class="text-light">Current Bread Per Click: <span id="show-click"></span></span>
+        <br>
+        <span class="text-light">Current Bread Per Second (Bps): <span id="show-bps"></span></span>
+      </div>
+      <div class="col-4">
+        <span class="text-big">Store!</span>
+        <br>
+        <span>Price:<span id="hand-price"></span><br></span><button class="btn btn-dark" onclick="buyHand()">buy
+          hand</button><br><span class="text-small"> this upgrade we will attach another arm onto your body to increase
+          the
+          number of slices you can grab by 1!</span></span>
+        <br>
+        <br>
+        <span>Price:<span id="scoop-price"></span></span><br><button class="btn btn-dark" onclick="buyScoop()">buy
+          loaf
+          scoop</button><br><span class="text-small"> this upgrade you will recieve a Loaf Scoop (patent pending) which
+          allows you to pick up
+          15 more slices at once!</span></span>
+        <br>
+        <br>
+        <span>Price:<span id="vac-price"></span></span><br><button class="btn btn-dark " onclick="buyVac()">buy bread
+          vaccuum</button><br><span class="text-small">Recent scientific discoveries have allowed the creation of a
+          bread specific super vaccuum allowing the collection of 60 slices at once!</span></span>
+        <br>
+        <span>Price:<span id="ezbake-price"></span></span><br><button class="btn btn-dark " onclick="buyBake()">buy
+          ez-bake
+          oven</button><br>
+        <spanc class="text-small">Hands getting tired of grabbing bread? Bake your own with this EzBake oven which
+          outputs 5 slices of bread every second</span></span>
+          <br>
+          <br>
+          <span>Price:<span id="chef-price"></span></span><br><button class="btn btn-dark " onclick="buyChef()">buy
+            italian
+            chef</button><br><span class="text-small">Hire a full time Italian chef to bake and insane quantity of
+            bread! he will output 35 slices every single second!</span></span>
+      </div>
 
-  </div>
-</main>
+    </div>
+  </main>
 
-<body>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

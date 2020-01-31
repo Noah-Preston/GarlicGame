@@ -1,3 +1,15 @@
 .bg {
   background-color: darkgoldenrod;
 }
+
+.text-large {
+  font-size: 3rem;
+}
+
+.text-big {
+  font-size: 2rem;
+}
+
+.text-small {
+  font-size: .8rem;
+}
