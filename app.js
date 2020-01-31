@@ -12,6 +12,7 @@ let chefPriceElem = document.getElementById("chef-price")
 let showBpsElem = document.getElementById("show-bps")
 let showClickElem = document.getElementById("show-click")
 
+
 let garlicBread = {
   slices: 0,
   multiplier: 0,
@@ -153,8 +154,30 @@ function addBps() {
   setInterval(figureBps, 1000)
 }
 
+function restart() {
+  garlicBread.slices = 0;
+  garlicBread.multiplier = 0;
+  garlicBread.bps = 0;
+  clickUpgrades.anotherHand.quantity = 0;
+  clickUpgrades.anotherHand.price = 50;
+  clickUpgrades.loafScoop.price = 1000;
+  clickUpgrades.loafScoop.quantity = 0;
+  clickUpgrades.breadvac.quantity = 0;
+  clickUpgrades.breadvac.price = 15000;
+  autoUpgrades.easyBake.price = 300;
+  autoUpgrades.easyBake.quantity = 0;
+  autoUpgrades.italianChef.price = 3000;
+  autoUpgrades.italianChef.quantity = 0;
+  update();
+}
 
+function enableHand() {
+  if (garlicBread.slices < clickUpgrades.anotherHand.price) {
+    return "not enough slices"
+  } else if (garlicBread.slices >= clickUpgrades.anotherHand.price) {
 
+  }
+}
 
 
 
